@@ -5,11 +5,13 @@ import { fetchData } from "../helpers/serviceHelpers";
 import BackButton from "../helpers/backButton";
 import GoInfoUrl from "../helpers/goInfoUrl";
 
+
 import "./heroInfoPage.scss";
 function HeroInfoPage({ heros }) {
   const { id } = useParams();
   const [herosComics, setHerosComics] = useState([]);
   const [selectedHero, setSelectedHero] = useState([]);
+  const [isLoading, setIsLoading] = useState();
 
   useEffect(() => {
     if (herosComics) console.log(herosComics);
@@ -20,18 +22,29 @@ function HeroInfoPage({ heros }) {
   }, []);
 
   const getDataComics = async () => {
-    // setIsLoading(true);
+    try {
+    
     const hero = heros?.find((hero) => hero.id.toString() === id);
     if (!hero) {
       return;
     }
     setSelectedHero(hero);
+    setIsLoading(true);
     const data = await fetchData(
       `https://gateway.marvel.com/v1/public/characters/${hero.id}/comics?ts=1&apikey=21c4deff50c8b10883535b83bcb4368e&hash=4a94f81d38fa18041d34358a5424c38b`
     ).catch((e) => console.error(e));
     setHerosComics(data?.data?.results);
-    // setIsLoading(false);
-  };
+    setIsLoading(false);
+  } catch (error) {
+    console.error(error);
+    setIsLoading(false); // Hata durumunda yükleme ekranını kaldır
+  }
+};
+
+if (isLoading) {
+  return <div>Loading...</div>;
+}
+
 
   return selectedHero ? (
     //! mui material kullanıldı css yapılanmasında gelen api verilerinin doğru oturması için sayfa düzenine!
