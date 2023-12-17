@@ -14,4 +14,4 @@ Projenin hızlı render edilmesi için vite kullanıldı. Test işlemleri yapıl
 
 # Tech Stack
 
-React,MaterialUI,React-router-dom
+React,MaterialUI,React-router-dom,vite
