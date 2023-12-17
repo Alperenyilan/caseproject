@@ -33,7 +33,11 @@ function HeroInfoPage({ heros }) {
     const data = await fetchData(
       `https://gateway.marvel.com/v1/public/characters/${hero.id}/comics?ts=1&apikey=21c4deff50c8b10883535b83bcb4368e&hash=4a94f81d38fa18041d34358a5424c38b`
     ).catch((e) => console.error(e));
-    setHerosComics(data?.data?.results);
+
+    // Çizgi roman sayısını 10 ile sınırla
+    const limitedComics = data?.data?.results.slice(0, 10);
+
+    setHerosComics(limitedComics);
     setIsLoading(false);
   } catch (error) {
     console.error(error);
