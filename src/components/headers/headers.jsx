@@ -50,7 +50,7 @@ const Headers = () => {
           src="static/marvellogo.svg"
           onClick={handleClick}
         />
-        {/* Bundan sonrası search ile ilgili formun bitisine kadar */}
+       
       </Box>
     </Box>
   );

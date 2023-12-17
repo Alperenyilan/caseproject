@@ -10,6 +10,7 @@ function HomePage({ heros }) {
       <div className="featured">
         <h1>Featured Characters and Image</h1>
       </div>
+      {/* Mui Material kullanıldı gelen verilerin doğru oturması için */}
       <Grid className="container">
         {heros?.map((hero) => (
           <Grid className="item" key={hero.id}>
