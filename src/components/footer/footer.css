@@ -1,0 +1,56 @@
+.main-footer {
+  background: black;
+
+  width: 100%;
+}
+
+.fullcontent {
+  display: flex;
+  gap: 1020px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
+
+.footer-logo img {
+  width: 180px;
+}
+
+.links-footer-follow {
+  width: 200px;
+  border-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.content {
+  width: 280px;
+  display: flex;
+}
+
+span {
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  padding-left: 650px;
+  text-align: center;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}

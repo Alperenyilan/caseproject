@@ -1,0 +1,122 @@
+/* COLORS */
+$red: #ff0000;
+$gold: #c6a972;
+$darkGrey: #202020;
+$lightGrey: #e5e5e5;
+$white: #ffffff;
+$translucent: rgba(255, 255, 255, 0);
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+/* Örnek CSS */
+/* xs boyutu için */
+@media (max-width: 600px) {
+  .item {
+    width: 100%; /* Ekran genişliğinin yarısı */
+  }
+}
+
+/* md boyutu için */
+@media (min-width: 601px) and (max-width: 960px) {
+  .item {
+    width: 33.33%; /* Ekran genişliğinin üçte biri */
+  }
+}
+
+/* lg boyutu için */
+@media (min-width: 961px) {
+  .item {
+    width: 100%; /* Ekran genişliğinin dörtte biri */
+  }
+}
+
+.BoxElement {
+  height: 240px;
+  width: 100%;
+  background-color: $red;
+  color: $gold;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  &:focus,
+  &:visited {
+    background-color: $darkGrey;
+    color: $red;
+  }
+  &:hover {
+    background-color: $darkGrey;
+    color: $red;
+    transform: translateY(-0.3rem);
+  }
+  &:active {
+    background-color: $darkGrey;
+    color: $red;
+    transform: translateY(-0.1rem);
+  }
+}
+.featured {
+  align-items: center;
+  max-width: 100%;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
+
+  display: flex;
+  border-radius: 50px;
+}
+.featured h1 {
+  color: #ff0000; /* Örnek olarak kırmızı renk ekledik */
+}
+
+// .img {
+//   background-color: #ff;
+// }
+// .card-body {
+//   height: 10rem;
+//   background: black;
+//   position: relative;
+//   &:before {
+//     content: ' ';
+//     height: 0%;
+//     width: 100%;
+//     background: $red;
+//     position: absolute;
+//     z-index: 3;
+//     transition: 0.3s ease;
+//     top: 0;
+//   }
+// }
+
+.BoxElementIn {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  background-color: grey;
+}
+
+.imgElement {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.boxElementGeneral {
+  height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

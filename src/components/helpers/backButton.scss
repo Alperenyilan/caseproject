@@ -1,0 +1,22 @@
+.buttonStyle {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #000000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    background-color: #1565c0;
+  }
+}
+
+$icon-size: 24px;
+
+.icon-style {
+  font-size: $icon-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
