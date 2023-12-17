@@ -1,8 +1,17 @@
-# React + Vite
+# Proje Hakkında Genel Bilgiler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projenin hızlı render edilmesi için vite kullanıldı. Test işlemleri yapıldı ve Gulp ile minify bundle işlemleri gerçekleştirildi. Responsive bir yapı oluşturuldu.Proje Responsive bir yapıya sahiptir.
 
-Currently, two official plugins are available:
+# Projeyi Ayağa kaldırmak için
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1-)`git clone https://github.com/Alperenyilan/caseproject.git `
+
+2-) `npm Install`
+
+3-) `npm run dev`
+
+4-) Test çalıştırmak için: `npm run test veya npm test`
+
+# Tech Stack
+
+React,MaterialUI,React-router-dom
