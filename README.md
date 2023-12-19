@@ -1,6 +1,6 @@
 # Proje Hakkında Genel Bilgiler
 
-Projenin hızlı render edilmesi için vite kullanıldı. Test işlemleri yapıldı ve Gulp ile minify bundle işlemleri gerçekleştirildi. Responsive bir yapı oluşturuldu.Proje Responsive bir yapıya sahiptir.Mobile uyumludur.
+Projenin hızlı render edilmesi için vite kullanıldı. Test işlemleri yapıldı ve Gulp ile minify bundle işlemleri gerçekleştirildi. Responsive bir yapı oluşturuldu.Proje Responsive bir yapıya sahiptir.Mobile uyumludur.Karakterlere tıklanıldığında comics ve açıklama bölümleri mevcuttur.Her 2 bölümde responsiveliğe dikkat edilmiştir!
 
 # Projeyi Ayağa kaldırmak için
 
